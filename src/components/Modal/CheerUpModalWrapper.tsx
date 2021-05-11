@@ -27,7 +27,7 @@ export const CheerUpModalWrapper = ({ currentItem, resetSelectedItem }: Props) =
 
   const sendCheer = () => {
     // eslint-disable-next-line no-alert
-    alert(`[${currentItem.title}] 응원 완료`);
+    alert(`[${currentItem.title}] 수강신청 완료`);
     onClose();
   };
 
@@ -45,7 +45,7 @@ export const CheerUpModalWrapper = ({ currentItem, resetSelectedItem }: Props) =
           isDisplay={isModalDisplay}
           isModalFadeOut={isModalFadeOut}
           onClose={onClose}
-          title="응원할 클래스를 확인해 주세요"
+          title="수강할 수업 를 확인해 주세요"
         >
           <ChildContent>
             <img src={currentItem.photoUrl} alt={currentItem?.title} />
@@ -56,7 +56,7 @@ export const CheerUpModalWrapper = ({ currentItem, resetSelectedItem }: Props) =
               취소하기
             </StyledButton>
             <StyledButton type="button" onClick={sendCheer}>
-              응원하기
+              수강하기
             </StyledButton>
           </ChildButtonArea>
         </Modal>
@@ -138,7 +138,7 @@ const StyledButton = styled.button`
   line-height: 20px;
 
   color: #ffffff;
-  background: #ff5600;
+  background: #00b3ff;
 
   &.cancel {
     color: rgb(107, 107, 107);
